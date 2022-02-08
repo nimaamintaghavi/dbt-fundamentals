@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: users
+    description: Users should have a username and it should be unique
+    columns:
+      - name: username
+        tests:
+          - unique
+          - not_null
+
+  - name: sales
+    columns:
+      - name: qtysold
+        description: There needs to be a ticket sold 
+        tests:
+          - not_null

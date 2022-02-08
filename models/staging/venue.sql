@@ -1,0 +1,1 @@
+SELECT * FROM `dbt-fundementals.TIKIT.venue`
