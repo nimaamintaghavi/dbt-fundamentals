@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: users
+    columns:
+      - name: userid
+        tests:
+          - unique
+          - not_null
+
+  - name: sales
+    columns:
+      - name: qtysold
+        tests:
+          - not_null
