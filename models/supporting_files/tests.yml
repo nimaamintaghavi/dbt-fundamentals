@@ -2,8 +2,9 @@ version: 2
 
 models:
   - name: users
+    description: Users should have a username and it should be unique
     columns:
-      - name: userid
+      - name: username
         tests:
           - unique
           - not_null
@@ -11,5 +12,6 @@ models:
   - name: sales
     columns:
       - name: qtysold
+        description: There needs to be a ticket sold 
         tests:
           - not_null

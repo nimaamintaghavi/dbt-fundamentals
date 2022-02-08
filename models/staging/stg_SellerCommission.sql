@@ -16,8 +16,6 @@ WITH SellerCommission AS (
     
     INNER JOIN {{ ref('date') }}  AS date
         ON DATE(sales.saletime) = date.caldate
-
-LIMIT 200000
 )
 
 SELECT * FROM SellerCommission
